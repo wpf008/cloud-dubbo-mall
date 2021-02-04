@@ -15,8 +15,18 @@ spring:
     nacos:
       discovery:
         server-addr: 192.168.10.8:8848
+    sentinel:
+      transport:
+        port: 8919
+        dashboard: 127.0.0.1:8080
   main:
     allow-bean-definition-overriding: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
 
 
 
