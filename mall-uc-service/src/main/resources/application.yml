@@ -7,20 +7,20 @@ dubbo:
     name: dubbo
     port: 20881
   registry:
-    address: spring-cloud://192.168.10.8:8848
+    address: spring-cloud://127.0.0.1:8848
 spring:
   application:
     name: dubbo-spring-cloud-provider
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource  #当前数据源操作类型
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/cloud?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+    url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
     username: root
-    password: 12345678
+    password: Yy@5021067813
   cloud:
     nacos:
       discovery:
-        server-addr: 192.168.10.8:8848
+        server-addr: 127.0.0.1:8848
   main:
     allow-bean-definition-overriding: true
 
